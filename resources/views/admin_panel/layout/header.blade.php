@@ -45,19 +45,16 @@
 
 
                 <li>
-                    <a href="index.html"><i class="fa fa-desktop "></i>Dashboard</a>
+                    <a href="/"><i class="fa fa-desktop "></i>Dashboard</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-edit "></i>UI Elements<span class="fa arrow"></span></a>
+                    <a href="#"><i class="fa fa-edit "></i>Categories<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="#">Notifications</a>
+                            <a href="/admin_panel/category/index">Categories List</a>
                         </li>
                         <li>
-                            <a href="#">Elements</a>
-                        </li>
-                        <li>
-                            <a href="#">Free Link</a>
+                            <a href="/admin_panel/category/create">Add</a>
                         </li>
                     </ul>
                 </li>
