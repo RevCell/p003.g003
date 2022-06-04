@@ -7,22 +7,17 @@
                 <div class="col-md-12">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <h1>Create a new Category</h1>
+                            <h1>Create a new Brand</h1>
                         </div>
-                        <form action="{{Route("cat.store")}}" method="post">
+                        <form action="{{Route("brand.store")}}" method="post" enctype="multipart/form-data">
                             @csrf
                             <div class="panel-body">
-                                <h4>Category Title</h4>
+                                <h4>Brand Title</h4>
                                 <input type="text" name="title" id="cat_title" class="form-control" >
                             </div>
                             <div class="panel-body">
-                                <h4>Category Lead</h4>
-                                <select name="category_id" id="" class="form-control" >
-                                    <option value="" selected disabled>select category lead</option>
-                                    @foreach($category as $cat)
-                                        <option value="{{$cat->id}}">{{$cat->title}}</option>
-                                    @endforeach
-                                </select>
+                                <h4>Brand Image</h4>
+                                <input type="file" name="img" id="cat_title" class="form-control" >
                             </div>
                             <div class="panel-footer">
                                 <button class="btn btn-success">ADD</button>
@@ -36,3 +31,4 @@
     </div>
 
 @endsection
+

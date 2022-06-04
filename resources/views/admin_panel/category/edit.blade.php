@@ -9,7 +9,7 @@
                         <div class="panel-heading">
                             <h1>edit -{{$default->title}}- category</h1>
                         </div>
-                        <form action="/admin_panel/category/{{$default->id}}" method="post">
+                        <form action="{{Route("cat.update",$default)}}" method="post">
                             @csrf
                             @method("patch")
                             <div class="panel-body">

@@ -130,6 +130,7 @@
 <script type="text/javascript" src="/shop/js/jquery.dcjqaccordion.min.js"></script>
 <script type="text/javascript" src="/shop/js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="/shop/js/custom.js"></script>
+@yield("scripts")
 <!-- JS Part End-->
 </body>
 </html>

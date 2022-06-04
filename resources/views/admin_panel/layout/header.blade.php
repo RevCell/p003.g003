@@ -45,25 +45,44 @@
 
 
                 <li>
-                    <a href="/"><i class="fa fa-desktop "></i>Dashboard</a>
+                    <a href="/admin_panel/dashboard"><i class="fa fa-desktop "></i>Dashboard</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-edit "></i>Categories<span class="fa arrow"></span></a>
+                    <a href="#"><i class="fa fa-table "></i>Categories<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="/admin_panel/category/index">Categories List</a>
+                            <a href="{{Route("cat.index")}}">Categories List</a>
                         </li>
                         <li>
-                            <a href="/admin_panel/category/create">Add</a>
+                            <a href="{{Route("cat.create")}}">Add</a>
                         </li>
                     </ul>
                 </li>
 
                 <li>
-                    <a href="#"><i class="fa fa-table "></i>Table Examples</a>
+                    <a href="#"><i class="fa fa-tablet "></i>Brands<span class="fa arrow"></span></a>
+
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="{{Route("brand.index")}}">Index</a>
+                        </li>
+                        <li>
+                            <a href="{{Route("brand.create")}}">Add</a>
+                        </li>
+                    </ul>
                 </li>
+
                 <li>
-                    <a href="#"><i class="fa fa-edit "></i>Forms </a>
+                    <a href="#"><i class="fa fa-archive"></i>Products<span class="fa arrow"></span></a>
+
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="{{Route("product.index")}}">Index</a>
+                        </li>
+                        <li>
+                            <a href="{{Route("product.create")}}">Add</a>
+                        </li>
+                    </ul>
                 </li>
 
 

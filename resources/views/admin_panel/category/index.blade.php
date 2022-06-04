@@ -23,10 +23,10 @@
                         <td>{{$cat->title}}</td>
                         <td>{{optional($cat->parent)->title}}</td>
                         <td>
-                            <a href="/admin_panel/category/edit/{{$cat->id}}" class="btn btn-warning">Edit</a>
+                            <a href="{{route("cat.edit",$cat)}}" class="btn btn-warning">Edit</a>
                         </td>
                         <td>
-                            <form action="/admin_panel/category/delete/{{$cat->id}}" method="post">
+                            <form action="{{Route("cat.destroy",$cat)}}" method="post">
                                 @csrf
                                 @method("delete")
                                 <button class="btn btn-danger">Delete</button>
